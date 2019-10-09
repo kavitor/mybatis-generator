@@ -36,6 +36,23 @@
     from user_role
   </select>
   <resultMap id="BaseResultMap" type="com.kavito.mybatisgenerator.pojo.UserRole">
+    <id column="UID" jdbcType="INTEGER" property="uid" />
+    <id column="RID" jdbcType="INTEGER" property="rid" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="map">
+    delete from user_role
+    where UID = #{uid,jdbcType=INTEGER}
+      and RID = #{rid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.kavito.mybatisgenerator.pojo.UserRole">
+    insert into user_role (UID, RID)
+    values (#{uid,jdbcType=INTEGER}, #{rid,jdbcType=INTEGER})
+  </insert>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select UID, RID
+    from user_role
+  </select>
+  <resultMap id="BaseResultMap" type="com.kavito.mybatisgenerator.pojo.UserRole">
     <id column="UID" jdbcType="INTEGER" property="UID" />
     <id column="RID" jdbcType="INTEGER" property="RID" />
   </resultMap>

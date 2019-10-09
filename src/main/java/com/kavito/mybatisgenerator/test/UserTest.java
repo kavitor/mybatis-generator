@@ -17,10 +17,5 @@ public class UserTest {
         user.setSex("1");
         user.setAddress("深圳龙岗区");
 
-
-
-
-
-
     }
 }
