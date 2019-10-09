@@ -11,10 +11,10 @@ import com.kavito.mybatisgenerator.pojo.User;
 public class UserTest {
     public static void main(String[] args) {
         User user = new User();
-
-
-
-
-
+        user.setId(0);
+        user.setUsername("zhangSan");
+        user.setBirthday(new Date());
+        user.setSex("男");
+        user.setAddress("深圳南山区");
     }
 }
