@@ -15,7 +15,7 @@ public class UserTest {
         user.setUsername("liuBei");
         user.setBirthday(new Date());
         user.setSex("1");
-        user.setAddress("深圳龙岗区");
+        user.setAddress("深圳南山区");
 
     }
 }
